@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/admin.min.css">
+
+  <title></title>
+ 
+</head>
+<body>
+<div class="container">
+  <!-- Content here -->
+  123456
+</div>
+<div class="container-fluid">
+ 
+语气
+使用Bootstrap的JavaScript模式插件来为您的网站添加对话框，用于通知灯箱，用户通知或完全自定义的内容。
+
+限时优惠：获取10个免费的Adobe股票图像。
+通过碳的广告
+怎么运行的
+在开始使用Bootstrap的模式组件之前，请确保阅读以下内容，因为我们的菜单选项最近已更改。
+
+模式是用HTML，CSS和JavaScript构建的。它们位于文档中的所有其他位置，并从该滚动中移除<body>以便模式内容滚动。
+点击模式“背景”将自动关闭模式。
+Bootstrap一次只支持一个模式窗口。不支持嵌套模式，因为我们认为它们是不好的用户体验。
+模态的使用position: fixed，有时可能会有点特别的渲染。只要有可能，将您的模态HTML置于顶层位置以避免其他元素的潜在干扰。将嵌套.modal在另一个固定元素中时，可能会遇到问题。
+由于position: fixed在移动设备上使用模块，有一些注意事项。请参阅我们的浏览器支持文档的详细信息。
+由于HTML5是如何定义它的语义，将autofocusHTML属性在引导情态动词没有影响。要达到相同的效果，请使用一些自定义JavaScript：
+复制
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+请继续阅读演示和使用指南。
+
+例子
+模态组件
+下面是一个静态模式的例子（指其position与display被覆盖）。包括模态标题，模态正文（必需padding）和模态页脚（可选）。我们要求你在可能的情况下包含模式头文件，或者提供另一个明确的解雇动作。
+
+模态标题
+×
+模态正文在这里。
+
+关
+保存更改
+复制
+<div class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+现场演示
+点击下面的按钮，切换工作模式演示。它将滑下并从页面顶部淡入。
+
+启动演示模式
+复制
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+滚动长内容
+当模式变得太长，用户的视口或设备，他们滚动独立的页面本身。试试下面的演示，看看我们的意思。
+
+启动演示模式
+复制
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+垂直居中
+添加.modal-dialog-centered到.modal-dialog垂直居中模式。
+
+启动演示模式
+复制
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+工具提示和弹出
+工具提示和弹出可以根据需要放置在模态中。当模式关闭时，任何工具提示和弹出窗口也会被自动解除。
+
+启动演示模式
+复制
+<div class="modal-body">
+  <h5>Popover in a modal</h5>
+  <p>This <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">button</a> triggers a popover on click.</p>
+  <hr>
+  <h5>Tooltips in a modal</h5>
+  <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
+</div>
+使用网格
+通过嵌套利用模式中的引导网格系统.container-fluid内.modal-body。然后，像任何其他地方一样使用正常的网格系统类。
+
+启动演示模式
+复制
+<div class="modal-body">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 ml-auto">.col-md-3 .ml-auto</div>
+      <div class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-9">
+        Level 1: .col-sm-9
+        <div class="row">
+          <div class="col-8 col-sm-6">
+            Level 2: .col-8 .col-sm-6
+          </div>
+          <div class="col-4 col-sm-6">
+            Level 2: .col-4 .col-sm-6
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+改变模态内容
+有一堆按钮，都会触发相同的模式，内容稍有不同？使用event.relatedTarget和HTML data-*属性（可能通过jQuery）来改变模式的内容取决于哪个按钮被点击。
+
+下面是一个现场演示，后面是示例HTML和JavaScript。有关更多信息，请阅读模式事件文档以获取详细信息relatedTarget。
+
+打开@mdo模式 打开@fat模式 打开@getbootstrap的模式 复制
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+复制
+$('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+删除动画
+对于只是出现而不是淡入查看.fade的模态，从模态标记中删除类。
+
+复制
+<div class="modal" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+  ...
+</div>
+动态高度
+如果模态的高度在打开时发生变化，则应调用$('#myModal').modal('handleUpdate')模板的位置以防出现滚动条。
+
+无障碍
+一定要加role="dialog"和aria-labelledby="..."，引用模式称号，.modal以及role="document"对.modal-dialog本身。另外，你可以用aria-describedbyon来描述你的模态对话框.modal。
+
+嵌入YouTube视频
+以模式嵌入YouTube视频需要不在Bootstrap中的附加JavaScript才能自动停止播放等等。看到这个有用的堆栈溢出帖子了解更多信息。
+
+可选尺寸
+Modals有两个可选的大小，可以通过修饰符类放置在一个.modal-dialog。这些尺寸在某些断点处启动，以避免缩小视口上的水平滚动条。
+
+大模态  小模态
+复制
+<!-- Large modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>
+
+<!-- Small modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
+
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>
+用法
+模式插件通过数据属性或JavaScript来按需切换隐藏的内容。它还增加.modal-open了<body>覆盖默认的滚动行为，并生成一个.modal-backdrop提供点击区域来解除所显示的模式，当点击模态外。
+
+通过数据属性
+激活一个模式，而不写JavaScript。data-toggle="modal"在一个控制器元素上设置，如一个按钮，以及一个data-target="#foo"或href="#foo"一个特定的模式来切换。
+
+复制
+<button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
+通过JavaScript
+myModal用一行JavaScript 调用带有id的模式：
+
+复制
+$('#myModal').modal(options)
+选项
+选项可以通过数据属性或JavaScript传递。对于数据属性，请将选项名称附加到data-中data-backdrop=""。
+
+名称	类型	默认	描述
+背景	布尔值或字符串 'static'	真正	包含一个模式背景元素。或者，指定static一个不会在点击时关闭模式的背景。
+键盘	布尔	真正	按下退出键时关闭模式
+焦点	布尔	真正	初始化时将重点放在模态上。
+显示	布尔	真正	显示初始化模式。
+方法
+异步方法和转换
+所有的API方法都是异步的，并开始一个转换。一旦转换开始但在结束之前，它们就返回给调用者。另外，一个转换组件的方法调用将被忽略。
+
+请参阅我们的JavaScript文档以获取更多信息
+
+.modal(options)
+激活您的内容作为一种模式。接受可选的选项object。
+
+复制
+$('#myModal').modal({
+  keyboard: false
+})
+.modal('toggle')
+手动切换模式。返回到之前的模态主叫方实际上已显示或隐藏（IE浏览器之前shown.bs.modal或hidden.bs.modal事件发生时）。
+
+复制
+$('#myModal').modal('toggle')
+.modal('show')
+手动打开一个模式。在实际显示模态之前（即shown.bs.modal事件发生之前）返回给调用者。
+
+复制
+$('#myModal').modal('show')
+.modal('hide')
+手动隐藏模式。在模态被隐藏之前（即在hidden.bs.modal事件发生之前）返回给调用者。
+
+复制
+$('#myModal').modal('hide')
+.modal('handleUpdate')
+手动重新调整模态的位置，如果一个模态的高度在打开的时候发生了变化（例如出现滚动条的话）。
+
+复制
+$('#myModal').modal('handleUpdate')
+.modal('dispose')
+摧毁一个元素的模态。
+
+活动
+Bootstrap的模态类暴露了一些事件挂钩到模态功能。所有的模态事件都是在模态本身（即在<div class="modal">）发射的。
+
+事件类型	描述
+show.bs.modal	此事件在show实例方法被调用时立即触发。如果由于点击而引起，则单击的元素可用作relatedTarget事件的属性。
+shown.bs.modal	当模式已经被用户看到时（等待CSS转换完成）​​，这个事件被触发。如果由于点击而引起，则单击的元素可用作relatedTarget事件的属性。
+hide.bs.modal	当hide实例方法被调用时，这个事件立即被触发。
+hidden.bs.modal	当模式完成对用户的隐藏时，会触发此事件（等待CSS转换完成）​​。复制
+$('#myModal').on('hidden.bs.modal', function (e) {
+  // do something...
+})
+
+
+
+
+
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script type="text/javascript">
+// close.bs.alert  此事件在close实例方法被调用时立即触发。
+// closed.bs.alert 警报关闭时会触发此事件（将等待CSS转换完成）​​。
+// $('.alert').on('closed.bs.alert', function () {
+//   //alert("x");
+// })
+</script>
+</body>
+</html>

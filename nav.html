@@ -1,0 +1,522 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/admin.min.css">
+
+  <title></title>
+ 
+</head>
+<body>
+<div class="container">
+  <!-- Content here -->
+  123456
+</div>
+<div class="container-fluid">
+ 
+<!-- 基本导航
+在Bootstrap中可用的导航共享一般标记和样式，从基.nav类到活动和禁用状态。交换修饰符类以在每种样式之间切换。
+
+基础.nav组件使用flexbox构建，为构建所有类型的导航组件提供了坚实的基础。它包括一些样式覆盖（用于处理列表），一些用于较大命中区域的链接填充以及基本的禁用样式。
+
+基本.nav组件不包含任何.active状态。下面的例子包括这个类，主要是为了证明这个特定的类不会触发任何特殊的样式。 -->
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+
+<!-- 类始终都在使用，所以您的标记可以超级灵活。<ul>像上面这样使用，或者用一个<nav>元素来滚动自己。由于.nav使用display: flex，导航链接的行为与导航项目相同，但没有额外的标记。 -->
+<nav class="nav">
+  <a class="nav-link active" href="#">Active</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link disabled" href="#">Disabled</a>
+</nav>
+
+<!-- 可用的样式
+.nav使用修饰符和实用程序更改s组件的样式。根据需要混合搭配，或者建立自己的搭配。
+
+水平对齐
+使用flexbox实用程序更改导航的水平对齐方式。默认情况下，导航是左对齐的，但是您可以轻松地将它们更改为居中或右对齐。
+
+以下列为中心.justify-content-center： -->
+
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+<!-- 与.justify-content-end以下内容对齐： -->
+<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+
+<!-- 垂直
+通过使用.flex-column实用程序更改弹性项目方向来堆叠导航。需要堆叠在一些视口上，而不是其他的？使用响应版本（例如，.flex-sm-column）。 -->
+<ul class="nav flex-column">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+与往常一样，垂直导航也是可能<ul>的。
+
+活动
+链接
+链接
+已禁用
+复制
+<nav class="nav flex-column">
+  <a class="nav-link active" href="#">Active</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link disabled" href="#">Disabled</a>
+</nav>
+标签
+从上方获取基本的导航栏，并添加.nav-tabs该类以生成选项卡式界面。使用它们来使用我们的选项卡JavaScript插件创建可放置区域。
+
+活性
+链接
+链接
+残
+复制
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+丸
+采取相同的HTML，而是使用.nav-pills：
+
+活性
+链接
+链接
+残
+复制
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+填写并证明
+强制你.nav的内容扩展两个修饰符类的全部可用宽度。要按比例填充所有可用空间，请.nav-item使用.nav-fill。请注意，所有的水平空间都被占用，但不是每个导航项都具有相同的宽度。
+
+活性
+更长的导航链接
+链接
+残
+复制
+<ul class="nav nav-pills nav-fill">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Longer nav link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+在使用<nav>基于导航的时候，一定要包含.nav-item在锚点上。
+
+活动
+链接
+链接
+已禁用
+复制
+<nav class="nav nav-pills nav-fill">
+  <a class="nav-item nav-link active" href="#">Active</a>
+  <a class="nav-item nav-link" href="#">Link</a>
+  <a class="nav-item nav-link" href="#">Link</a>
+  <a class="nav-item nav-link disabled" href="#">Disabled</a>
+</nav>
+对于等宽元素，请使用.nav-justified。所有的横向空间都将被导航链接占用，但与.nav-fill上面不同的是，每个导航项都是相同的宽度。
+
+活动的
+更长导航链接
+链接
+已禁用
+复制
+<nav class="nav nav-pills nav-justified">
+  <a class="nav-link active" href="#">Active</a>
+  <a class="nav-link" href="#">Longer nav link</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link disabled" href="#">Disabled</a>
+</nav>
+类似于.nav-fill使用<nav>基于导航的例子，一定要包含.nav-item在锚点上。
+
+活动
+链接
+链接
+已禁用
+复制
+<nav class="nav nav-pills nav-justified">
+  <a class="nav-item nav-link active" href="#">Active</a>
+  <a class="nav-item nav-link" href="#">Link</a>
+  <a class="nav-item nav-link" href="#">Link</a>
+  <a class="nav-item nav-link disabled" href="#">Disabled</a>
+</nav>
+使用flex实用程序
+如果您需要敏锐的导航版本，请考虑使用一系列的Flexbox实用程序。虽然更详细，但这些实用程序提供了跨敏感断点更大的自定义。在下面的示例中，我们的导航栏将堆叠在最低的断点上，然后适应从小断点开始填充可用宽度的水平布局。
+
+活动
+链接
+链接
+已禁用
+复制
+<nav class="nav nav-pills flex-column flex-sm-row">
+  <a class="flex-sm-fill text-sm-center nav-link active" href="#">Active</a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
+  <a class="flex-sm-fill text-sm-center nav-link disabled" href="#">Disabled</a>
+</nav>
+关于无障碍
+如果您正在使用导航栏来提供导航栏，请确保将其添加role="navigation"到最合乎逻辑的父容器中<ul>，或者<nav>在整个导航栏中包裹一个元素。不要将角色添加到<ul>自身中，因为这样可以防止通过辅助技术将其发布为实际列表。
+
+需要注意的是导航栏，即使在视觉风格与标签.nav-tabs类，应该不给予role="tablist"，role="tab"或role="tabpanel"属性。这些仅适用于动态选项卡式界面，如WAI ARIA Authoring Practices中所述。有关示例，请参阅本节中的动态选项卡式接口的JavaScript行为。
+
+使用下拉菜单
+添加一些额外的HTML和下拉式JavaScript插件的下拉菜单。
+
+带下拉的标签
+活性
+落下
+链接
+残
+复制
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+滴药丸
+活性
+落下
+链接
+残
+复制
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+JavaScript行为
+使用选项卡JavaScript插件 - 单独包括它或通过编译的bootstrap.js文件 - 来扩展我们的导航选项卡和药片，以创建本地内容的可放大的窗格，即使通过下拉菜单。
+
+如果你从源代码构建我们的JavaScript，它需要util.js。
+
+动态标签的接口，如在所描述的WAI ARIA创作实践，需要role="tablist"，role="tab"，role="tabpanel"，和附加aria-以传达其结构，功能和当前状态，以辅助技术（如屏幕阅读器）的用户属性。
+
+需要注意的是动态选项卡式界面应该不包含下拉菜单，因为这会导致可用性和可访问性问题。从可用性的角度来看，当前显示的选项卡的触发元素不能立即显示（因为它在关闭的下拉菜单中）可能会导致混淆。从可访问性的角度来看，目前还没有明智的方法将这种结构映射到标准的WAI ARIA模式，这意味着辅助技术用户不易理解。
+
+家
+轮廓
+联系
+生牛仔你可能还没有听说过他们牛仔短裤奥斯汀。NESCENT豆腐曲奇饼干，复古合成器大师清洁。胡子陈词滥调，威廉斯堡carles素食主义者helvetica。Reprehenderit屠夫复古keffiyeh dreamcatcher合成器。cosby毛衣欧盟banh mi，qui irure特里richardson前鱿鱼。aliquip placeat丹参杀菌iphone。Seitan aliquip quis羊毛衫美国服装，屠夫voluptate nisi qui。
+
+复制
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+</div>
+<!-- 为了帮助您适应您的需求，可以使用<ul>基于-based的标记，如上所示，或使用任意“滚动自己的”标记。请注意，如果您正在使用<nav>，则不应role="tablist"直接添加，因为这会覆盖该元素的本地角色，成为导航地标。相反，切换到一个替代元素（在下面的例子中，一个简单的<div>），并<nav>围绕它。
+
+主页
+简介
+联系
+Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam。这是一个非常有效的方法。Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minimize occaecat。Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit。运动mollit坐在culpa nisi culpa非adipisicing reprehenderit do dolore。Duis decehenderit occaecat anim ullamco ad duis occaecat ex。
+
+复制 -->
+<nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+</div>
+<!-- 标签插件也适用于药片。
+
+家
+轮廓
+联系
+把它们放在一起，使它们不发生变化。Fujiat velit proident aliquip nisi incididunt nostrud practitation proident est nisi。Irure magna elit commodo anim ex veniam culpa eiusmod id nostrud sit cupidatat in veniam ad。Eiusmod consequat eu adipisicing minim anim aliquip cupidatat culpa excepteur quis。Occaecat坐在欧盟实施ir L Lorem incididunt nostrud。
+
+复制 -->
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+</div>
+<!-- 和垂直的药片。
+
+主页
+简介
+消息
+设置
+Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint。Veniam sint duis incididunt do esse magna mollit excepteur laborum qui。Id id reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod。在occaecat商品和voluptate最小rennederit mollit pariatur的石膏dolor。非劳务派遣和其他劳务派遣企业，
+
+复制 -->
+<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+  <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+  <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+  <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+  <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+</div>
+<div class="tab-content" id="v-pills-tabContent">
+  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
+  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+</div>
+<!-- 使用数据属性
+您可以通过简单地指定data-toggle="tab"或data-toggle="pill"在一个元素上激活一个标签或药片导航，而无需编写任何JavaScript 。在.nav-tabs或上使用这些数据属性.nav-pills。
+
+复制 -->
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Messages</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+  <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+  <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
+  <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
+</div>
+<!-- 通过JavaScript
+通过JavaScript启用tabbable选项卡（每个选项卡需要单独激活）：
+
+复制
+$('#myTab a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+您可以通过多种方式激活单个选项卡：
+
+复制
+$('#myTab a[href="#profile"]').tab('show') // Select tab by name
+$('#myTab li:first-child a').tab('show') // Select first tab
+$('#myTab li:last-child a').tab('show') // Select last tab
+$('#myTab li:nth-child(3) a').tab('show') // Select third tab
+淡化效果
+为了使制表符淡入，添加.fade到每个.tab-pane。第一个选项卡窗格还必须.show使初始内容可见。
+
+复制
+<div class="tab-content">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+  <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
+  <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
+</div>
+方法
+异步方法和转换
+所有的API方法都是异步的，并开始一个转换。一旦转换开始但在结束之前，它们就返回给调用者。另外，一个转换组件的方法调用将被忽略。
+
+请参阅我们的JavaScript文档以获取更多信息
+
+$（）。标签
+激活标签元素和内容容器。标签应该有一个data-target或一个href目标在DOM的容器节点。
+
+复制 -->
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Messages</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+  </li>
+</ul>
+
+<div class="tab-content">
+  <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+  <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+  <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
+  <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
+</div>
+
+<script>
+  $(function () {
+    $('#myTab li:last-child a').tab('show')
+  })
+</script>
+<!-- .TAB（ '节目'）
+选择给定的选项卡并显示其关联窗格。之前选择的任何其他选项卡将被取消选中，并且其关联窗格将被隐藏。在选项卡窗格实际显示之前（即shown.bs.tab事件发生之前）返回给调用者。
+
+复制
+$('#someTab').tab('show')
+.TAB（ '处理'）
+销毁元素的选项卡。
+
+活动
+显示新标签时，事件按以下顺序进行：
+
+hide.bs.tab （在当前活动标签上）
+show.bs.tab （在待显示的选项卡上）
+hidden.bs.tab（在上一个活动选项卡上，与hide.bs.tab事件相同）
+shown.bs.tab（在刚刚显示的新标签上，与show.bs.tab事件相同）
+如果没有选项卡已经激活，那么hide.bs.tab和hidden.bs.tab事件将不会被触发。
+
+事件类型	描述
+show.bs.tab	此事件在选项卡显示中触发，但在显示新选项卡之前。使用event.target和event.relatedTarget分别定位活动选项卡和上一个活动选项卡（如果可用）。
+shown.bs.tab	在显示标签后，此事件会在标签上显示。使用event.target和event.relatedTarget分别定位活动选项卡和上一个活动选项卡（如果可用）。
+hide.bs.tab	当一个新的选项卡被显示时，这个事件触发（因此上一个活动选项卡将被隐藏）。使用event.target和event.relatedTarget分别定位当前活动选项卡和即将生效的新选项卡。
+hidden.bs.tab	此事件在显示新选项卡后触发（因此前一个活动选项卡被隐藏）。使用event.target和event.relatedTarget分别定位上一个活动选项卡和新活动选项卡。复制
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  e.target // newly activated tab
+  e.relatedTarget // previous active tab
+}) -->
+
+
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script type="text/javascript">
+// close.bs.alert  此事件在close实例方法被调用时立即触发。
+// closed.bs.alert 警报关闭时会触发此事件（将等待CSS转换完成）​​。
+// $('.alert').on('closed.bs.alert', function () {
+//   //alert("x");
+// })
+</script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/admin.min.css">
+
+  <title></title>
+ 
+</head>
+<body>
+<div class="container">
+  <!-- Content here -->
+  123456
+</div>
+<div class="container-fluid">
+ 
+<!-- 概观
+下拉菜单是可切换的，用于显示链接列表的上下文叠加等等。他们与包含的Bootstrap下拉式JavaScript插件交互。他们通过点击而不是通过盘旋来切换; 这是一个有意的设计决定。
+
+下拉菜单建立在第三方库Popper.js上，该库提供动态定位和视口检测。一定要包括popper.min.js引导的JavaScript或使用前bootstrap.bundle.min.js/ bootstrap.bundle.js包含Popper.js。Popper.js不用于在navbars中定位下拉菜单，因为不需要动态定位。
+
+如果你从源代码构建我们的JavaScript，它需要util.js。
+
+无障碍
+所述WAI ARIA标准定义了实际role="menu"插件，但是这是特定于该触发动作或功能应用类菜单。ARIA菜单只能包含菜单项，复选框菜单项，单选按钮菜单项，单选按钮组和子菜单。
+
+另一方面，Bootstrap的下拉菜单被设计为通用的，并且适用于各种情况和标记结构。例如，可以创建包含其他输入和表单控件（例如搜索字段或登录表单）的下拉列表。出于这个原因，引导不指望（也没有自动添加）的任何role和aria-真正需要的属性ARIA菜单。作者必须自己包含这些更具体的属性。
+
+然而，Bootstrap确实为大多数标准的键盘菜单交互添加了内置的支持，比如.dropdown-item使用光标键移动单个元素的能力以及用键关闭菜单ESC。
+
+例子
+将下拉的切换（您的按钮或链接）和下拉菜单.dropdown或其他声明的元素包裹起来position: relative;。下拉菜单可以触发<a>或<button>元素更好地适应您的潜在需求。
+
+
+任何单个.btn可以变成一个下拉切换与一些标记更改。以下是如何让他们使用任何<button>元素： -->
+<!-- 单按钮下拉菜单  -->
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+
+<!-- 并与<a>元素： -->
+<div class="dropdown show">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown link
+  </a>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+
+<!--  -->
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</div>
+
+<!-- 拆分按钮下拉列表 -->
+<div class="btn-group">
+  <button type="button" class="btn btn-danger">Action</button>
+  <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</div>
+
+<!-- 浆纱
+按钮下拉菜单可以处理各种尺寸的按钮，包括默认和分割下拉按钮。 -->
+<div class="btn-group">
+  <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Large button
+  </button>
+  <div class="dropdown-menu">
+    ...
+  </div>
+</div>
+<div class="btn-group">
+  <button class="btn btn-secondary btn-lg" type="button">
+    Large button
+  </button>
+  <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <div class="dropdown-menu">
+    ...
+  </div>
+</div>
+
+<!-- Small button groups (default and split) -->
+<div class="btn-group">
+  <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Small button
+  </button>
+  <div class="dropdown-menu">
+    ...
+  </div>
+</div>
+<div class="btn-group">
+  <button class="btn btn-secondary btn-sm" type="button">
+    Small button
+  </button>
+  <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <div class="dropdown-menu">
+    ...
+  </div>
+</div>
+
+<!-- 丢弃变化 -->
+<div class="btn-group dropup">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropup
+  </button>
+  <div class="dropdown-menu">
+    <!-- Dropdown menu links -->
+  </div>
+</div>
+
+<!-- Split dropup button -->
+<div class="btn-group dropup">
+  <button type="button" class="btn btn-secondary">
+    Split dropup
+  </button>
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <div class="dropdown-menu">
+    <!-- Dropdown menu links -->
+  </div>
+</div>
+
+<!-- Dropright变化 右 -->
+<!-- Default dropright button -->
+<div class="btn-group dropright">
+  <button type="button" class="btn btn-secondary">Dropright</button>
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropright</span>
+  </button>
+  <div class="dropdown-menu">
+    <!-- Dropdown menu links -->
+  </div>
+</div>
+
+<!-- Split dropright button -->
+<div class="btn-group dropright">
+  <button type="button" class="btn btn-secondary">
+    Split dropright
+  </button>
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropright</span>
+  </button>
+  <div class="dropdown-menu">
+    <!-- Dropdown menu links -->
+  </div>
+</div>
+
+<!-- 水滴变异 左 -->
+<!-- Default dropleft button -->
+<div class="btn-group dropleft">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropleft
+  </button>
+  <div class="dropdown-menu">
+    <!-- Dropdown menu links -->
+  </div>
+</div>
+
+<!-- Split dropleft button -->
+<div class="btn-group">
+  <div class="btn-group dropleft" role="group">
+    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="sr-only">Toggle Dropleft</span>
+    </button>
+    <div class="dropdown-menu">
+      <!-- Dropdown menu links -->
+    </div>
+  </div>
+  <button type="button" class="btn btn-secondary">
+    Split dropleft
+  </button>
+</div>
+
+<!-- 菜单项 -->
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <button class="dropdown-item" type="button">Action</button>
+    <button class="dropdown-item" type="button">Another action</button>
+    <button class="dropdown-item" type="button">Something else here</button>
+  </div>
+</div>
+
+<!-- 菜单对齐 -->
+<div class="btn-group">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Right-aligned menu
+  </button>
+  <div class="dropdown-menu dropdown-menu-right">
+    <button class="dropdown-item" type="button">Action</button>
+    <button class="dropdown-item" type="button">Another action</button>
+    <button class="dropdown-item" type="button">Something else here</button>
+  </div>
+</div>
+
+<!-- 菜单标题 -->
+<div class="dropdown-menu">
+  <h6 class="dropdown-header">Dropdown header</h6>
+  <a class="dropdown-item" href="#">Action</a>
+  <a class="dropdown-item" href="#">Another action</a>
+</div>
+
+<!-- 菜单分隔符 -->
+<div class="dropdown-menu">
+  <a class="dropdown-item" href="#">Action</a>
+  <a class="dropdown-item" href="#">Another action</a>
+  <a class="dropdown-item" href="#">Something else here</a>
+  <div class="dropdown-divider"></div>
+  <a class="dropdown-item" href="#">Separated link</a>
+</div>
+
+<!-- 菜单表单 -->
+<div class="dropdown-menu">
+  <form class="px-4 py-3">
+    <div class="form-group">
+      <label for="exampleDropdownFormEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+    </div>
+    <div class="form-group">
+      <label for="exampleDropdownFormPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="dropdownCheck">
+      <label class="form-check-label" for="dropdownCheck">
+        Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </form>
+  <div class="dropdown-divider"></div>
+  <a class="dropdown-item" href="#">New around here? Sign up</a>
+  <a class="dropdown-item" href="#">Forgot password?</a>
+</div>
+
+<form class="dropdown-menu p-4">
+  <div class="form-group">
+    <label for="exampleDropdownFormEmail2">Email address</label>
+    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleDropdownFormPassword2">Password</label>
+    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+    <label class="form-check-label" for="dropdownCheck2">
+      Remember me
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+<!-- 禁用菜单项  -->
+<div class="dropdown-menu">
+  <a class="dropdown-item" href="#">Regular link</a>
+  <a class="dropdown-item disabled" href="#">Disabled link</a>
+  <a class="dropdown-item" href="#">Another link</a>
+</div>
+
+
+<!-- 用法
+通过数据属性或JavaScript，下拉插件通过切换.show父列表项上的类来切换隐藏内容（下拉菜单）。该data-toggle="dropdown"属性依赖于在应用程序级别关闭下拉菜单，所以总是使用它是一个好主意。
+
+在支持触摸的设备上，打开下拉列表可将空（$.noop）mouseover处理程序添加到<body>元素的直接子元素。无可否认的是，在iOS的事件委托中，要想解决一个怪癖是非常必要的，否则就会阻止在下拉之外的任何地方触发代码来关闭下拉菜单。一旦下拉关闭，这些额外的空mouseover处理程序被删除。
+
+通过数据属性
+添加data-toggle="dropdown"到链接或按钮来切换下拉菜单。
+
+复制
+<div class="dropdown">
+  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown trigger
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dLabel">
+    ...
+  </div>
+</div>
+通过JavaScript
+通过JavaScript调用下拉菜单：
+
+复制
+$('.dropdown-toggle').dropdown()
+data-toggle="dropdown" 仍然需要
+无论您是通过JavaScript调用下拉菜单，还是使用data-api，data-toggle="dropdown"总是需要在下拉的触发元素上显示。
+
+选项
+选项可以通过数据属性或JavaScript传递。对于数据属性，请将选项名称附加到data-中data-offset=""。
+
+名称  类型  默认  描述
+抵消  数字| 字符串| 功能 0 下拉相对于其目标的偏移。有关更多信息，请参阅Popper.js的偏移量文档。
+翻动  布尔  真正  允许下拉菜单在参考元素重叠的情况下翻转。有关更多信息，请参阅Popper.js的翻转文档。
+边界  字符串| 元件 'scrollParent'  溢出下拉菜单的约束边界。接受的值'viewport'，'window'，'scrollParent'，或一个HTMLElement参考（JavaScript的只）。有关更多信息，请参阅Popper.js的preventOverflow文档。
+注意什么时候boundary被设置为除了'scrollParent'，样式position: static被应用到.dropdown容器以外的任何值。
+
+方法
+方法  描述
+$().dropdown('toggle')  切换给定导航栏或选项卡式导航的下拉菜单。
+$().dropdown('update')  更新元素下拉列表的位置。
+$().dropdown('dispose') 销毁元素的下拉菜单
+活动
+所有的下拉事件都在.dropdown-menu父元素上触发，并有一个relatedTarget属性，其值是切换的锚元素。
+
+事件  描述
+show.bs.dropdown  当show instance方法被调用时，这个事件立即触发。
+shown.bs.dropdown 这个事件在下拉对用户可见的时候被激发（等待CSS转换完成）​​。
+hide.bs.dropdown  当调用隐藏实例方法时立即触发此事件。
+hidden.bs.dropdown  当下拉菜单完成后，这个事件被触发（将等待CSS转换完成）​​。复制
+$('#myDropdown').on('show.bs.dropdown', function () {
+  // do something…
+}) -->
+
+
+
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script type="text/javascript">
+// close.bs.alert  此事件在close实例方法被调用时立即触发。
+// closed.bs.alert 警报关闭时会触发此事件（将等待CSS转换完成）​​。
+// $('.alert').on('closed.bs.alert', function () {
+//   //alert("x");
+// })
+</script>
+</body>
+</html>

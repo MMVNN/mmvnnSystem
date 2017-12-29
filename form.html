@@ -1,0 +1,1223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/admin.min.css">
+
+  <title></title>
+ 
+</head>
+<body>
+<div class="container">
+  <!-- Content here -->
+  123456
+</div>
+<div class="container-fluid">
+ 
+<!-- 概观
+Bootstrap的窗体控件扩展了我们带有类的Rebooted窗体样式。使用这些类来选择自定义的显示，以便在浏览器和设备上进行更一致的渲染。
+
+请确保type在所有输入（例如email电子邮件地址或number数字信息）上使用适当的属性，以利用更新的输入控件（如电子邮件验证，号码选择等）。
+
+下面是一个演示Bootstrap表单样式的简单例子。继续阅读所需课程的文档，表格布局等。 -->
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<!-- 表单控件 -->
+<form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Example select</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect2">Example multiple select</label>
+    <select multiple class="form-control" id="exampleFormControlSelect2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form>
+
+<!-- 对于文件输入，交换.form-control为.form-control-file -->
+<form>
+  <div class="form-group">
+    <label for="exampleFormControlFile1">Example file input</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  </div>
+</form>
+<select class="form-control form-control-lg">
+  <option>Large select</option>
+</select>
+<select class="form-control">
+  <option>Default select</option>
+</select>
+<select class="form-control form-control-sm">
+  <option>Small select</option>
+</select>
+
+<!-- 只读
+readonly在输入上添加布尔属性以防止修改输入的值。只读输入显示更轻（就像禁用输入），但保留标准光标。 -->
+<input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+
+<!-- 浆纱
+使用像.form-control-lg和的类来设置高度.form-control-sm。 -->
+<input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+<input class="form-control" type="text" placeholder="Default input">
+<input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+
+<!-- 只读纯文本 -->
+<form>
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+  </div>
+</form>
+
+<!--  -->
+<form class="form-inline">
+  <div class="form-group mb-2">
+    <label for="staticEmail2" class="sr-only">Email</label>
+    <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+  </div>
+  <div class="form-group mx-sm-3 mb-2">
+    <label for="inputPassword2" class="sr-only">Password</label>
+    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+  </div>
+  <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+</form>
+
+<!-- 复选框和单选 -->
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Default checkbox
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+  <label class="form-check-label" for="defaultCheck2">
+    Disabled checkbox
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Default radio
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+    Second default radio
+  </label>
+</div>
+<div class="form-check disabled">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+  <label class="form-check-label" for="exampleRadios3">
+    Disabled radio
+  </label>
+</div>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">1</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">2</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+  <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+</div>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1">1</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2">2</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+  <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+</div>
+
+<!-- 没有标签 -->
+<div class="form-check">
+  <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+</div>
+<div class="form-check">
+  <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+</div>
+
+<!-- 表单组 -->
+<form>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Example label</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Another label</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+  </div>
+</form>
+
+<!-- 表格网格 -->
+<form>
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+  </div>
+</form>
+
+<!-- 表格行 -->
+<form>
+  <div class="form-row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+  </div>
+</form>
+
+<!-- 网格系统也可以创建更复杂的布局。 -->
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+
+<!-- 水平的形式 -->
+<form>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            First radio
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            Second radio
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+          <label class="form-check-label" for="gridRadios3">
+            Third disabled radio
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <div class="form-group row">
+    <div class="col-sm-2">Checkbox</div>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" for="gridCheck1">
+          Example checkbox
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+  </div>
+</form>
+
+<!-- 水平形式标签大小 请务必使用.col-form-label-sm或.col-form-label-lg向您的<label>s或<legend>s正确遵循.form-control-lg和.form-control-sm。-->
+<form>
+  <div class="form-group row">
+    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
+    </div>
+  </div>
+</form>
+
+<!-- 列大小 -->
+<form>
+  <div class="form-row">
+    <div class="col-7">
+      <input type="text" class="form-control" placeholder="City">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="State">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Zip">
+    </div>
+  </div>
+</form>
+
+<!-- 自动调整大小 下面的示例使用flexbox实用程序将内容垂直居中并更改.col为.col-auto使您的列仅占用尽可能多的空间。换句话说，该列根据内容大小自己。-->
+<form>
+  <div class="form-row align-items-center">
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInput">Name</label>
+      <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe">
+    </div>
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInputGroup">Username</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+      </div>
+    </div>
+    <div class="col-auto">
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+        <label class="form-check-label" for="autoSizingCheck">
+          Remember me
+        </label>
+      </div>
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary mb-2">Submit</button>
+    </div>
+  </div>
+</form>
+
+<!-- 然后，您可以再次使用特定于大小的列类重新混合。 -->
+
+<form>
+  <div class="form-row align-items-center">
+    <div class="col-sm-3 my-1">
+      <label class="sr-only" for="inlineFormInputName">Name</label>
+      <input type="text" class="form-control" id="inlineFormInputName" placeholder="Jane Doe">
+    </div>
+    <div class="col-sm-3 my-1">
+      <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+      </div>
+    </div>
+    <div class="col-auto my-1">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+        <label class="form-check-label" for="autoSizingCheck2">
+          Remember me
+        </label>
+      </div>
+    </div>
+    <div class="col-auto my-1">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>
+
+<!-- 当然，也支持自定义表单控件。 -->
+<form>
+  <div class="form-row align-items-center">
+    <div class="col-auto my-1">
+      <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option selected>Choose...</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+    <div class="col-auto my-1">
+      <div class="custom-control custom-checkbox mr-sm-2">
+        <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+        <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+      </div>
+    </div>
+    <div class="col-auto my-1">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>
+
+<!-- 内联表格 -->
+<!-- 使用.form-inline该类在单个水平行上显示一系列标签，表单控件和按钮。内联表单中的表单控件与默认状态稍有不同。
+
+控件是display: flex折叠任何HTML空格，并允许您使用间距和flexbox实用程序提供对齐控件。
+控件和输入组接收width: auto以覆盖Bootstrap默认值width: 100%。
+控件只能内嵌在至少576px宽的视口中，以应对移动设备上的狭窄视口。
+您可能需要使用间隔工具手动解决单个窗体控件的宽度和对齐方式（如下所示）。最后，确保始终包含<label>每个表单控件，即使您需要将其从非屏幕浏览器访问者中隐藏起来.sr-only。 -->
+<form class="form-inline">
+  <label class="sr-only" for="inlineFormInputName2">Name</label>
+  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
+
+  <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+  <div class="input-group mb-2 mr-sm-2">
+    <div class="input-group-prepend">
+      <div class="input-group-text">@</div>
+    </div>
+    <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+  </div>
+
+  <div class="form-check mb-2 mr-sm-2">
+    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+    <label class="form-check-label" for="inlineFormCheck">
+      Remember me
+    </label>
+  </div>
+
+  <button type="submit" class="btn btn-primary mb-2">Submit</button>
+</form>
+
+
+<!-- 自定义窗体控件和选择也支持。 -->
+<form class="form-inline">
+  <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Preference</label>
+  <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <option selected>Choose...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+
+  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+    <input type="checkbox" class="custom-control-input" id="customControlInline">
+    <label class="custom-control-label" for="customControlInline">Remember my preference</label>
+  </div>
+
+  <button type="submit" class="btn btn-primary my-1">Submit</button>
+</form>
+
+<!-- 隐藏标签的替代品
+如果屏幕阅读器等辅助技术不包含每个输入的标签，则屏幕阅读器将会遇到麻烦。对于这些内联表单，可以使用.sr-only该类隐藏标签。存在用于辅助技术，如提供一个标签的进一步的替代方法aria-label，aria-labelledby或者title属性。如果这些都不存在，辅助技术可能诉诸使用该placeholder属性（如果存在），但是请注意，placeholder不建议使用其他标签方法作为替代。
+
+帮助文字
+表单中的块级帮助文本可以使用.form-text（以前.help-block在v3中已知）创建。内联帮助文本可以使用任何内联HTML元素和实用程序类来灵活实现.text-muted。
+
+将帮助文本与表单控件相关联
+帮助文本应该与使用该aria-describedby属性相关的表单控件显式关联。这将确保辅助技术（如屏幕阅读器）在用户关注或输入控件时将公布此帮助文本。
+
+帮助文本下面的输入可以使用样式.form-text。这个课程包括display: block并添加了一些顶部边距，以便从上面的输入中轻松分隔。 -->
+<label for="inputPassword5">Password</label>
+<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+<small id="passwordHelpBlock" class="form-text text-muted">
+  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+</small>
+
+<!-- 嵌入式文本可以使用任何典型的内嵌HTML元素（可以是一个<small>，<span>或别的东西），有什么比一个实用工具类的更多。 -->
+<form class="form-inline">
+  <div class="form-group">
+    <label for="inputPassword6">Password</label>
+    <input type="password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+    <small id="passwordHelpInline" class="text-muted">
+      长度必须为8-20个字符。
+    </small>
+  </div>
+</form>
+
+<!-- 禁用表单 -->
+<input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled><form>
+  <fieldset disabled>
+    <div class="form-group">
+      <label for="disabledTextInput">Disabled input</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+    </div>
+    <div class="form-group">
+      <label for="disabledSelect">Disabled select menu</label>
+      <select id="disabledSelect" class="form-control">
+        <option>Disabled select</option>
+      </select>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+      <label class="form-check-label" for="disabledFieldsetCheck">
+        Can't check this
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+
+<form>
+  <fieldset disabled>
+    <div class="form-group">
+      <label for="disabledTextInput">Disabled input</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+    </div>
+    <div class="form-group">
+      <label for="disabledSelect">Disabled select menu</label>
+      <select id="disabledSelect" class="form-control">
+        <option>Disabled select</option>
+      </select>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+      <label class="form-check-label" for="disabledFieldsetCheck">
+        Can't check this
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+
+<!-- 注意锚点
+默认情况下，浏览器将把所有本地表单控件（<input>，<select>和<button>单元）内<fieldset disabled>为禁用，防止对他们的键盘和鼠标交互。但是，如果你的表单也包含<a ... class="btn btn-*">元素，这些只会被赋予一种风格pointer-events: none。正如在关于按钮的禁用状态（特别是在锚元素的子部分）中所述的那样，这个CSS属性还没有标准化，并且在Opera 18及其以下版本或Internet Explorer 10中不完全支持，不会阻止键盘用户能够关注或激活这些链接。为了安全起见，请使用自定义JavaScript来禁用此类链接。
+
+跨浏览器兼容性
+虽然Bootstrap将在所有浏览器中应用这些样式，但Internet Explorer 11及更低版本并不完全支持a上的disabled属性<fieldset>。使用自定义JavaScript来禁用这些浏览器中的字段集。 -->
+
+<!-- 验证
+通过HTML5表单验证为您的用户提供有价值的，可操作的反馈 - 可在我们支持的所有浏览器中使用。从浏览器中选择默认的验证反馈，或者使用我们的内置类和入门JavaScript实现自定义消息。
+
+我们强烈建议使用自定义验证样式，因为本机浏览器的默认值不会公布给读者。
+
+怎么运行的
+以下是如何使用Bootstrap进行表单验证：
+
+HTML表单验证通过CSS的两个伪类应用，:invalid以及:valid。它适用于<input>，<select>和<textarea>元素。
+引导程序的范围:invalid和:valid样式为父.was-validated类，通常应用于<form>。否则，任何没有值的必填字段在加载页面时显示为无效。这样，您可以选择何时激活它们（通常在尝试提交表单之后）。
+作为备用，.is-invalid并且.is-valid类别可以用来代替伪类用于服务器端验证。他们不需要.was-validated父类。
+由于CSS工作方式的限制，我们不能（现在）将样式应用到<label>DOM中的表单控件之前，而不需要定制JavaScript的帮助。
+所有现代浏览器都支持约束验证API，这是用于验证表单控件的一系列JavaScript方法。
+反馈信息可以使用浏览器默认值（每个浏览器不同，CSS不可变）或者我们的自定义反馈样式与额外的HTML和CSS。
+您可以setCustomValidity在JavaScript中提供自定义有效性信息。
+考虑到这一点，请考虑下面的演示，了解我们的自定义表单验证样式，可选的服务器端类和浏览器默认值。
+
+自定义样式
+对于自定义Bootstrap表单验证消息，您需要将novalidate布尔属性添加到您的<form>。这会禁用浏览器的默认反馈工具提示，但仍然可以访问JavaScript中的表单验证API。尝试提交下面的表格; 我们的JavaScript会拦截提交按钮并将反馈信息传递给您。
+
+当试图提交，你会看到:invalid和:valid样式应用到你的窗体控件。 -->
+<form id="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom01">First name</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom02">Last name</label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationCustomUsername">Username</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+        </div>
+        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+          Please choose a username.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom03">City</label>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom04">State</label>
+      <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+      <div class="invalid-feedback">
+        Please provide a valid state.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom05">Zip</label>
+      <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+
+  window.addEventListener('load', function() {
+    var form = document.getElementById('needs-validation');
+    form.addEventListener('submit', function(event) {
+      if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  }, false);
+})();
+</script>
+
+
+<!-- 浏览器默认值
+对定制验证反馈消息或编写JavaScript来改变表单行为不感兴趣？一切顺利，你可以使用浏览器的默认值。尝试提交下面的表格。根据您的浏览器和操作系统，您会看到一种稍微不同的反馈方式。
+
+尽管这些反馈样式不能用CSS进行样式化，但您仍然可以通过JavaScript自定义反馈文本 -->
+
+<form>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationDefault01">First name</label>
+      <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationDefault02">Last name</label>
+      <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Otto" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationDefaultUsername">Username</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend2">@</span>
+        </div>
+        <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault03">City</label>
+      <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault04">State</label>
+      <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault05">Zip</label>
+      <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+
+<!-- 服务器端
+我们建议使用客户端验证，但是如果您需要服务器端，可以使用.is-invalid和指示无效和有效的表单域.is-valid。请注意，.invalid-feedback这些类也支持。 -->
+<form>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationServer01">First name</label>
+      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Mark" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationServer02">Last name</label>
+      <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="Otto" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationServerUsername">Username</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend3">@</span>
+        </div>
+        <input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="Username" aria-describedby="inputGroupPrepend3" required>
+        <div class="invalid-feedback">
+          Please choose a username.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationServer03">City</label>
+      <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="City" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationServer04">State</label>
+      <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="State" required>
+      <div class="invalid-feedback">
+        Please provide a valid state.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationServer05">Zip</label>
+      <input type="text" class="form-control is-invalid" id="validationServer05" placeholder="Zip" required>
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+    </div>
+  </div>
+
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+
+
+<!-- 支持的元素
+我们的示例表单显示<input>上面的原生文本，但表单验证样式也可用于我们的自定义表单控件。 -->
+<form class="was-validated">
+  <div class="custom-control custom-checkbox mb-3">
+    <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+    <label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>
+    <div class="invalid-feedback">Example invalid feedback text</div>
+  </div>
+
+  <div class="custom-control custom-radio">
+    <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+    <label class="custom-control-label" for="customControlValidation2">Toggle this custom radio</label>
+  </div>
+  <div class="custom-control custom-radio mb-3">
+    <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+    <label class="custom-control-label" for="customControlValidation3">Or toggle this other custom radio</label>
+    <div class="invalid-feedback">More example invalid feedback text</div>
+  </div>
+
+  <div class="form-group">
+    <select class="custom-select" required>
+      <option value="">Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <div class="invalid-feedback">Example invalid custom select feedback</div>
+  </div>
+
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+    <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+    <div class="invalid-feedback">Example invalid custom file feedback</div>  
+  </div>
+</form>
+
+<!-- 自定义表单
+为了进一步定制和跨浏览器一致性，请使用我们完全自定义的表单元素来替换浏览器的默认值。它们建立在语义和可访问的标记之上，所以它们可以替代任何默认的表单控件。
+
+复选框和单选
+每个复选框和收音机都<div>与兄弟姐妹包装在一起，<span>以创建我们的自定义控件和一个<label>附带的文本。在结构上，这与我们的默认方法是一样的.form-check。
+
+我们~为所有的<input>状态使用兄弟选择符（），就像:checked正确设计我们的自定义表单指示符一样。与.custom-control-label课程结合后，我们还可以根据每个项目<input>的状态来设置文本的样式。
+
+我们隐藏默认<input>与opacity和使用.custom-control-label建立在与设立一个新的自定义窗体指标::before和::after。不幸的是，我们不能从这个元素构建一个自定义的元素，<input>因为CSS content不能在这个元素上工作。
+
+在检查状态，我们使用嵌入SVG图标的base64从开放标志性的。这为我们提供了对浏览器和设备的样式和定位的最佳控制。 -->
+
+<!-- 复选框 -->
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck1">
+  <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+</div>
+
+<!-- 单选 -->
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+  <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+  <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+</div>
+
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+  <label class="custom-control-label" for="customRadioInline1">Toggle this custom radio</label>
+</div>
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+  <label class="custom-control-label" for="customRadioInline2">Or toggle this other custom radio</label>
+</div>
+
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheckDisabled" disabled>
+  <label class="custom-control-label" for="customCheckDisabled">Check this custom checkbox</label>
+</div>
+
+<div class="custom-control custom-radio">
+  <input type="radio" id="radio3" name="radioDisabled" id="customRadioDisabled" class="custom-control-input" disabled>
+  <label class="custom-control-label" for="customRadioDisabled">Toggle this custom radio</label>
+</div>
+
+
+<select class="custom-select">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+
+
+<select class="custom-select custom-select-lg mb-3">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+
+<select class="custom-select custom-select-sm">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+<!-- multiple -->
+<select class="custom-select" multiple>
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+<!-- size -->
+<select class="custom-select" size="3">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+
+<!-- 文件浏览器 -->
+<div class="custom-file">
+  <input type="file" class="custom-file-input" id="customFile">
+  <label class="custom-file-label" for="customFile">Choose file</label>
+</div>
+
+<!-- 我们<input>通过隐藏默认文件opacity，而不是风格的<label>。该按钮生成并定位::after。最后，我们声明width，并height在<input>对周围的内容进行适当的间距。
+
+翻译或自定义字符串
+该:lang()伪类是用于允许“浏览”和“选择文件...”文本转换成其他语言的翻译方便。只需$custom-file-text使用相关的语言标记和本地化字符串覆盖或添加条目到SCSS变量。英文字符串可以用相同的方式定制。例如，以下是如何添加西班牙语翻译（西班牙语的语言代码es）：
+
+复制
+$custom-file-text: (
+  placeholder: (
+    en: "Choose file...",
+    es: "Seleccionar archivo..."
+  ),
+  button-label: (
+    en: "Browse",
+    es: "Navegar"
+  )
+);
+您需要正确设置文档（或其子树）的语言才能显示正确的文本。这可以使用来进行的lang属性或Content-LanguageHTTP报头的其它方法中。 -->
+
+<!-- 输入组 -->
+<!-- 基本的例子 -->
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">@</span>
+  </div>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <span class="input-group-text" id="basic-addon2">@example.com</span>
+  </div>
+</div>
+
+<label for="basic-url">Your vanity URL</label>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+  </div>
+  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text">$</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+  <div class="input-group-append">
+    <span class="input-group-text">.00</span>
+  </div>
+</div>
+
+<!-- 浆纱 将相对窗体大小类添加到.input-group自身，内部的内容将自动调整大小 - 无需重复每个元素上的窗体控件大小类。不支持在各个输入组元素上调整大小。 -->
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+</div>
+
+<div class="input-group input-group-lg">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+</div>
+
+<!-- 复选框和单选 -->
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <div class="input-group-text">
+      <input type="checkbox" aria-label="Checkbox for following text input">
+    </div>
+  </div>
+  <input type="text" class="form-control" aria-label="Text input with checkbox">
+</div>
+
+<div class="input-group">
+  <div class="input-group-prepend">
+    <div class="input-group-text">
+    <input type="radio" aria-label="Radio button for following text input">
+    </div>
+  </div>
+  <input type="text" class="form-control" aria-label="Text input with radio button">
+</div>
+
+<!-- 多个输入 -->
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="">First and last name</span>
+  </div>
+  <input type="text" class="form-control">
+  <input type="text" class="form-control">
+</div>
+
+<!-- 多个插件 -->
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text">$</span>
+    <span class="input-group-text">0.00</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+</div>
+
+<div class="input-group">
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+  <div class="input-group-append">
+    <span class="input-group-text">$</span>
+    <span class="input-group-text">0.00</span>
+  </div>
+</div>
+
+<!-- 按钮插件 -->
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+  </div>
+  <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+  </div>
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+  </div>
+  <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+  </div>
+</div>
+
+<!-- 下拉按钮 -->
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div role="separator" class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </div>
+  <input type="text" class="form-control" aria-label="Text input with dropdown button">
+</div>
+
+<div class="input-group">
+  <input type="text" class="form-control" aria-label="Text input with dropdown button">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div role="separator" class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </div>
+</div>
+<!-- 分段按钮 -->
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <button type="button" class="btn btn-outline-secondary">Action</button>
+    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div role="separator" class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </div>
+  <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+</div>
+
+<div class="input-group">
+  <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+  <div class="input-group-append">
+    <button type="button" class="btn btn-outline-secondary">Action</button>
+    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div role="separator" class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </div>
+</div>
+
+<!-- 自定义表单 -->
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+    <option selected>Choose...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+<div class="input-group mb-3">
+  <select class="custom-select" id="inputGroupSelect02">
+    <option selected>Choose...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+  <div class="input-group-append">
+    <label class="input-group-text" for="inputGroupSelect02">Options</label>
+  </div>
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+  </div>
+  <select class="custom-select" id="inputGroupSelect03">
+    <option selected>Choose...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+<div class="input-group">
+  <select class="custom-select" id="inputGroupSelect04">
+    <option selected>Choose...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+  </div>
+</div>
+
+
+<!-- 自定义文件输入 -->
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Upload</span>
+  </div>
+  <label class="custom-file">
+    <input type="file" id="inputGroupFile01" class="custom-file-input" required>
+    <span class="custom-file-control"></span>
+  </label>
+</div>
+
+<div class="input-group mb-3">
+  <label class="custom-file">
+    <input type="file" id="inputGroupFile02" class="custom-file-input" required>
+    <span class="custom-file-control"></span>
+  </label>
+  <div class="input-group-append">
+    <span class="input-group-text" id="">Upload</span>
+  </div>
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+  </div>
+  <label class="custom-file">
+    <input type="file" id="inputGroupFile03" class="custom-file-input" required>
+    <span class="custom-file-control"></span>
+  </label>
+</div>
+
+<div class="input-group">
+  <label class="custom-file">
+    <input type="file" id="inputGroupFile04" class="custom-file-input" required>
+    <span class="custom-file-control"></span>
+  </label>
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+  </div>
+</div>
+
+<!-- 无障碍
+如果您没有为每个输入包含标签，屏幕阅读器将会对您的表单造成麻烦。对于这些输入组，确保将任何附加标签或功能传送给辅助技术。
+
+要使用的确切技术（<label>使用.sr-only类隐藏元素，或使用aria-label和aria-labelledby属性，可能结合使用aria-describedby）以及需要传达哪些附加信息取决于您正在实现的接口窗口小部件的确切类型。本节中的示例提供了一些建议的特定于案例的方法。 -->
+
+
+
+
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script type="text/javascript">
+// close.bs.alert  此事件在close实例方法被调用时立即触发。
+// closed.bs.alert 警报关闭时会触发此事件（将等待CSS转换完成）​​。
+// $('.alert').on('closed.bs.alert', function () {
+//   //alert("x");
+// })
+// 
+$('.your-checkbox').prop('indeterminate', true)
+</script>
+</body>
+</html>

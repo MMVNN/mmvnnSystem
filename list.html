@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/admin.min.css">
+
+  <title></title>
+ 
+</head>
+<body>
+<div class="container">
+  <!-- Content here -->
+  123456
+</div>
+<div class="container-fluid">
+ 
+<!-- 列表组 -->
+
+<!-- 添加.active到a .list-group-item以指示当前的活动选择。 -->
+<!-- 添加.disabled到一个.list-group-item使其显示禁用。请注意，一些元素.disabled也将需要自定义JavaScript来完全禁用他们的点击事件（例如，链接）。 -->
+
+<ul class="list-group">
+	<li class="list-group-item active">选中的项目</li>
+	<li class="list-group-item">Dapibus ac facilisis in</li>
+	<li class="list-group-item disabled">禁用的项目</li>
+	<li class="list-group-item">Porta ac consectetur ac</li>
+	<li class="list-group-item">Vestibulum at eros</li>
+
+</ul>
+<!-- 链接和按钮
+使用<a>s或<button>s 通过添加来创建具有悬停，禁用和活动状态的可操作列表组项目.list-group-item-action。我们将这些伪类分开，以确保由非交互式元素（如<li>s或<div>s）组成的列表组不提供点击或点击功能。一定不要在.btn这里使用标准的课程。 -->
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action active">
+    Cras justo odio
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+  <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+  <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+</div>
+<!-- 有了<button>s，你也可以使用disabled属性而不是.disabled类。不幸的是，<a>s不支持disabled属性。 -->
+<div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action active">
+    Cras justo odio
+  </button>
+  <button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
+  <button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
+  <button type="button" class="list-group-item list-group-item-action">Porta ac consectetur ac</button>
+  <button type="button" class="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>
+</div>
+
+<!-- 上下文类
+使用上下文类来设置具有状态背景和颜色的列表项。 -->
+
+<ul class="list-group">
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+
+  <li class="list-group-item list-group-item-primary">This is a primary list group item</li>
+  <li class="list-group-item list-group-item-secondary">This is a secondary list group item</li>
+  <li class="list-group-item list-group-item-success">This is a success list group item</li>
+  <li class="list-group-item list-group-item-danger">This is a danger list group item</li>
+  <li class="list-group-item list-group-item-warning">This is a warning list group item</li>
+  <li class="list-group-item list-group-item-info">This is a info list group item</li>
+  <li class="list-group-item list-group-item-light">This is a light list group item</li>
+  <li class="list-group-item list-group-item-dark">This is a dark list group item</li>
+</ul>
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+
+  
+  <a href="#" class="list-group-item list-group-item-action list-group-item-primary">This is a primary list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">This is a secondary list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-success">This is a success list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-danger">This is a danger list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-warning">This is a warning list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-info">This is a info list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-light">This is a light list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-dark">This is a dark list group item</a>
+</div>
+
+<!-- 用徽章 -->
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Cras justo odio
+    <span class="badge badge-primary badge-pill">14</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Dapibus ac facilisis in
+    <span class="badge badge-primary badge-pill">2</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Morbi leo risus
+    <span class="badge badge-primary badge-pill">1</span>
+  </li>
+</ul>
+
+
+<!-- 自定义内容 -->
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small>3 days ago</small>
+    </div>
+    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+    <small>Donec id elit non mi porta.</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+    <small class="text-muted">Donec id elit non mi porta.</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+    <small class="text-muted">Donec id elit non mi porta.</small>
+  </a>
+</div>
+
+<!-- JavaScript行为
+使用选项卡JavaScript插件 - 单独包含它或通过编译的bootstrap.js文件 - 扩展我们的列表组，以创建本地内容的可放大的窗格。 -->
+<div class="row">
+  <div class="col-4">
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
+      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+    </div>
+  </div>
+</div>
+
+<!-- 使用数据属性 -->
+<!-- 您可以激活列表组导航，而无需通过简单地指定data-toggle="list"或在一个元素上编写任何JavaScript 。使用这些数据属性.list-group-item。 -->
+<!-- List group -->
+<div class="list-group" id="myList" role="tablist">
+  <a class="list-group-item list-group-item-action active" data-toggle="list" href="#home" role="tab">Home</a>
+  <a class="list-group-item list-group-item-action" data-toggle="list" href="#profile" role="tab">Profile</a>
+  <a class="list-group-item list-group-item-action" data-toggle="list" href="#messages" role="tab">Messages</a>
+  <a class="list-group-item list-group-item-action" data-toggle="list" href="#settings" role="tab">Settings</a>
+</div>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="home" role="tabpanel">...</div>
+  <div class="tab-pane" id="profile" role="tabpanel">...</div>
+  <div class="tab-pane" id="messages" role="tabpanel">...</div>
+  <div class="tab-pane" id="settings" role="tabpanel">...</div>
+</div>
+
+<!-- 通过JavaScript
+通过JavaScript启用可列表项目（每个列表项目需要单独激活）：
+
+复制
+$('#myList a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+您可以通过以下几种方式激活单个列表项目：
+
+复制
+$('#myList a[href="#profile"]').tab('show') // Select tab by name
+$('#myList a:first-child').tab('show') // Select first tab
+$('#myList a:last-child').tab('show') // Select last tab
+$('#myList a:nth-child(3)').tab('show') // Select third tab
+淡化效果
+为了使制表符面板淡入，添加.fade到每个.tab-pane。第一个选项卡窗格还必须.show使初始内容可见。
+
+复制
+<div class="tab-content">
+  <div class="tab-pane fade show active" id="home" role="tabpanel">...</div>
+  <div class="tab-pane fade" id="profile" role="tabpanel">...</div>
+  <div class="tab-pane fade" id="messages" role="tabpanel">...</div>
+  <div class="tab-pane fade" id="settings" role="tabpanel">...</div>
+</div> -->
+
+<!-- 方法
+$（）。标签
+激活列表项目元素和内容容器。标签应该有一个data-target或一个href目标在DOM的容器节点 -->
+<div class="list-group" id="myList" role="tablist">
+  <a class="list-group-item list-group-item-action active" data-toggle="list" href="#home" role="tab">Home</a>
+  <a class="list-group-item list-group-item-action" data-toggle="list" href="#profile" role="tab">Profile</a>
+  <a class="list-group-item list-group-item-action" data-toggle="list" href="#messages" role="tab">Messages</a>
+  <a class="list-group-item list-group-item-action" data-toggle="list" href="#settings" role="tab">Settings</a>
+</div>
+
+<div class="tab-content">
+  <div class="tab-pane active" id="home" role="tabpanel">...</div>
+  <div class="tab-pane" id="profile" role="tabpanel">...</div>
+  <div class="tab-pane" id="messages" role="tabpanel">...</div>
+  <div class="tab-pane" id="settings" role="tabpanel">...</div>
+</div>
+
+<script>
+  $(function () {
+    $('#myList a:last-child').tab('show')
+  })
+</script>
+
+<!-- .TAB（ '节目'）
+选择给定的列表项并显示其关联窗格。之前选择的任何其他列表项目将被取消选中，并且其关联窗格将被隐藏。在实际显示选项卡窗格（例如shown.bs.tab事件发生之前）之前，返回调用方。
+
+复制
+$('#someListItem').tab('show')
+活动
+显示新标签时，事件按以下顺序进行：
+
+hide.bs.tab （在当前活动标签上）
+show.bs.tab （在待显示的选项卡上）
+hidden.bs.tab（在上一个活动选项卡上，与hide.bs.tab事件相同）
+shown.bs.tab（在刚刚显示的新标签上，与show.bs.tab事件相同）
+如果没有标签已经活跃，hide.bs.tab而hidden.bs.tab事件不会被解雇。
+
+事件类型	描述
+show.bs.tab	此事件在选项卡显示中触发，但在显示新选项卡之前。使用event.target和event.relatedTarget分别定位活动选项卡和上一个活动选项卡（如果可用）。
+shown.bs.tab	在显示标签后，此事件会在标签上显示。使用event.target和event.relatedTarget分别定位活动选项卡和上一个活动选项卡（如果可用）。
+hide.bs.tab	当一个新的选项卡被显示时，这个事件触发（因此上一个活动选项卡将被隐藏）。使用event.target和event.relatedTarget分别定位当前活动选项卡和即将生效的新选项卡。
+hidden.bs.tab	此事件在显示新选项卡后触发（因此前一个活动选项卡被隐藏）。使用event.target和event.relatedTarget分别定位上一个活动选项卡和新活动选项卡。复制
+$('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
+  e.target // newly activated tab
+  e.relatedTarget // previous active tab
+}) -->
+
+
+<!-- 分页 -->
+<!-- 概观
+我们使用大量的连接链接进行分页，使链接难以忽略，并且易于扩展 - 同时提供大量的热门区域。分页是使用列表HTML元素构建的，因此屏幕阅读器可以公布可用链接的数量。使用包装<nav>元素将其识别为屏幕阅读器和其他辅助技术的导航部分。
+
+此外，网页可能有不止一个这样的导航部分，它的最好提供一个描述性aria-label的<nav>，以反映其目的。例如，如果分页组件用于在一组搜索结果之间导航，则可以使用适当的标签aria-label="Search results pages"。 -->
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+
+<!-- 使用图标 -->
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<!-- 禁用和活动状态 分页链接可以根据不同的情况进行定制。使用.disabled该出现非可点击和链接.active来表示当前页面。
+
+虽然.disabled类使用pointer-events: none来尝试禁用的链接的功能<a>的时候，那些CSS属性尚不规范，不占键盘导航。因此，您应该始终添加tabindex="-1"禁用的链接并使用自定义JavaScript来完全禁用其功能。-->
+<nav aria-label="...">
+  <ul class="pagination">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active">
+      <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- <span>在prev / next箭头的情况下，您可以选择替换活动或禁用锚点，或省略锚点，以移除点击功能并防止键盘焦点，同时保留预期的样式。 -->
+<nav aria-label="...">
+  <ul class="pagination">
+    <li class="page-item disabled">
+      <span class="page-link">Previous</span>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active">
+      <span class="page-link">
+        2
+        <span class="sr-only">(current)</span>
+      </span>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+<!-- 大小
+花式更大或更小的分页？添加.pagination-lg或.pagination-sm额外的尺寸。 -->
+<nav aria-label="...">
+  <ul class="pagination pagination-lg">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">1</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+  </ul>
+</nav>
+
+<!-- 居中 -->
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+<!-- 右 -->
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-end">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+
+
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script type="text/javascript">
+// close.bs.alert  此事件在close实例方法被调用时立即触发。
+// closed.bs.alert 警报关闭时会触发此事件（将等待CSS转换完成）​​。
+// $('.alert').on('closed.bs.alert', function () {
+//   //alert("x");
+// })
+</script>
+</body>
+</html>

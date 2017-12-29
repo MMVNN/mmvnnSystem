@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/admin.min.css">
+  <title>登录-MMVNN管理系统</title>
+</head>
+<body class="login-page">
+<div class="container-fluid">
+<div class="login-box">
+	<div class="login-logo"><strong>Admin</strong>MMVNN</div>
+	<div class="login-box-body">
+	<p class="login-box-msg">请填写用户名密码登陆系统</p>
+	<form>
+		<div class="form-group">
+			<input type="text" name="username" class="form-control" placeholder="用户名">
+		</div>
+		<div class="form-group ">
+			<input type="password" name="password" class="form-control" placeholder="密码">
+		</div>
+		<div class="form-group row">
+			<div class="col-6"><input type="text" name="vcode" class="form-control" placeholder="验证码"></div>
+			<div class="col-4"><img src="images/vcode.png" class="vcode" /></div>
+		</div>
+		<div class="row">
+			<div class="col-8">
+				<div class="custom-control custom-checkbox  my-1 mr-sm-2">
+					<input type="checkbox" name="rme" class="custom-control-input" id="customControlInline">
+					<label class="custom-control-label" for="customControlInline">记住我</label>
+				</div>
+	        </div>
+	        <div class="col-4">
+	            <button type="submit" class="btn btn-primary"> 提交 </button>
+	        </div>
+		</div>
+	</form>
+	</div>
+</div>
+</div>
+<script src="bootstrap/js/jquery.slim.min.js" ></script>
+<script src="bootstrap/js/popper.min.js" ></script>
+<script src="bootstrap/js/bootstrap.min.js" ></script>
+<script src="js/admin.min.js" ></script>
+</body>
+</html>

@@ -1,0 +1,422 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/admin.min.css">
+
+  <title></title>
+ 
+</head>
+<body>
+<div class="container">
+  <!-- Content here -->
+  123456
+</div>
+<div class="container-fluid">
+ 
+<!-- 导航栏
+Bootstrap功能强大的响应式导航标题的文档和示例，navbar。包括对品牌，导航等的支持，包括对我们的崩溃插件的支持。
+
+限时优惠：获取10个免费的Adobe股票图像。
+通过碳的广告
+怎么运行的
+以下是开始使用导航栏之前需要了解的内容：
+
+导航栏需要包装.navbar用.navbar-expand{-sm|-md|-lg|-xl}的响应倒塌和配色方案类。
+Navbar和它们的内容默认是流畅的。使用可选容器限制其水平宽度。
+使用我们的间距和柔性工具类来控制navbars中的间距和对齐。
+Navbar默认情况下是响应式的，但是你可以很容易地修改它们来改变它。响应行为取决于我们的Collapse JavaScript插件。
+打印时，导航栏默认为隐藏状态。强制他们通过添加.d-print到打印.navbar。请参阅显示实用程序类。
+确保使用<nav>元素的可访问性，或者，如果使用更通用的元素（如a）<div>，请将role="navigation"每个导航栏添加到明确标识为辅助技术用户的地标区域。
+请阅读有关支持的子组件的示例和列表。
+
+支持的内容
+Navbars内置支持一些子组件。根据需要选择以下内容：
+
+.navbar-brand 为您的公司，产品或项目名称。
+.navbar-nav 用于全高和轻量级导航（包括对下拉菜单的支持）。
+.navbar-toggler用于我们的崩溃插件和其他导航切换行为。
+.form-inline 任何形式的控制和行动。
+.navbar-text 用于添加垂直居中的文本字符串。
+.collapse.navbar-collapse 用于通过父断点来分组和隐藏导航栏内容。
+下面是一个响应式光主题导航栏中包含的所有子组件的示例，该导航栏在lg（大）断点处自动崩溃。 -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<!-- 本例使用的颜色（bg-light）和间距（my-2，my-lg-0，mr-sm-0，my-sm-0）的工具类。
+
+牌
+该.navbar-brand可应用于大部分元素，但是锚效果最好的一些元素可能需要的工具类或自定义样式。 -->
+<!-- As a link -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+</nav>
+
+<!-- As a heading -->
+<nav class="navbar navbar-light bg-light">
+  <span class="navbar-brand mb-0 h1">Navbar</span>
+</nav>
+
+<!-- 将图像添加到.navbar-brand将可能总是需要自定义样式或实用程序正确的大小。这里有一些例子来演示。 -->
+<!-- Just an image -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+  </a>
+</nav>
+<!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    Bootstrap
+  </a>
+</nav>
+
+<!--  导航-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- 而且，因为我们使用的是导航类，所以如果您喜欢，可以完全避免使用基于列表的方法。 -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Features</a>
+      <a class="nav-item nav-link" href="#">Pricing</a>
+      <a class="nav-item nav-link disabled" href="#">Disabled</a>
+    </div>
+  </div>
+</nav>
+
+<!-- 您也可以在导航栏导航中使用下拉菜单。下拉菜单需要用于定位的缠绕元件，所以一定要使用单独的和嵌套的元素.nav-item和.nav-link，如下所示。 -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- 形式 -->
+
+<nav class="navbar navbar-light bg-light">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
+<!-- 根据需要将内联表单的内容与实用程序对齐。 -->
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <a class="navbar-brand">Navbar</a>
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
+
+<nav class="navbar navbar-light bg-light">
+  <form class="form-inline">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">@</span>
+      </div>
+      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+  </form>
+</nav>
+
+<nav class="navbar navbar-light bg-light">
+  <form class="form-inline">
+    <button class="btn btn-outline-success" type="button">Main button</button>
+    <button class="btn btn-sm align-middle btn-outline-secondary" type="button">Smaller button</button>
+  </form>
+</nav>
+<!-- 文本
+导航栏可能包含一些文字的帮助.navbar-text。该类为文本字符串调整垂直对齐和水平间距。 -->
+<nav class="navbar navbar-light bg-light">
+  <span class="navbar-text">
+    Navbar text with an inline element
+  </span>
+</nav>
+<!-- 根据需要混合和匹配其他组件和实用程序。 -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar w/ text</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      Navbar text with an inline element
+    </span>
+  </div>
+</nav>
+
+<!-- 配色方案 -->
+<nav class="navbar navbar-dark bg-dark">
+  <!-- Navbar content -->
+</nav>
+
+<nav class="navbar navbar-dark bg-primary">
+  <!-- Navbar content -->
+</nav>
+
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+  <!-- Navbar content -->
+</nav>
+
+
+<!-- 集装箱 -->
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+  </nav>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Navbar</a>
+  </div>
+</nav>
+
+<!-- 放置
+使用我们的位置实用程序将navbars放置在非静态位置。选择固定的顶部，固定到底部，或粘到顶部（与页面滚动，直到到达顶部，然后停留在那里）。固定导航栏使用position: fixed，这意味着他们从DOM的正常流动和拉可能需要自定义的CSS（例如，padding-top上<body>），以防止重叠与其他元素。
+
+还要注意的是.sticky-top使用position: sticky，它没有完全在每个浏览器的支持。
+
+默认
+复制
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">Default</a>
+</nav>
+固定顶部
+复制
+<nav class="navbar fixed-top navbar-light bg-light">
+  <a class="navbar-brand" href="#">Fixed top</a>
+</nav>
+固定底部
+复制
+<nav class="navbar fixed-bottom navbar-light bg-light">
+  <a class="navbar-brand" href="#">Fixed bottom</a>
+</nav>
+粘性的顶部
+复制
+<nav class="navbar sticky-top navbar-light bg-light">
+  <a class="navbar-brand" href="#">Sticky top</a>
+</nav> -->
+
+<!-- ###响应行为### -->
+
+<!-- 当内容在按钮后面折叠时，导航栏可以利用.navbar-toggler，.navbar-collapse和.navbar-expand{-sm|-md|-lg|-xl}类进行更改。结合其他实用程序，您可以轻松选择何时显示或隐藏特定元素。
+
+对于永不崩溃.navbar-expand的导航栏，请在导航栏上添加该类。对于总是崩溃的导航栏，不要添加任何.navbar-expand类。
+
+Toggler
+Navbar的切换器默认是左对齐的，但是它们应该像a一样跟随一个兄弟元素.navbar-brand，它们会自动对齐到最右边。反转你的标记会颠倒拨号器的位置。以下是不同切换样式的示例。
+
+没有.navbar-brand显示在最低的断点： -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="#">Hidden brand</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<!-- 左侧显示品牌名称，右侧显示切换器： -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<!-- 左侧有一个开关器，右侧有品牌名称： -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Navbar</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<!-- 外部内容
+有时候您想使用折叠插件触发页面上其他地方的隐藏内容。因为我们的插件工作id和data-target匹配，这很容易完成！ -->
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h4 class="text-white">Collapsed content</h4>
+      <span class="text-muted">Toggleable via the navbar brand.</span>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
+
+
+
+
+
+
+
+
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script type="text/javascript">
+// close.bs.alert  此事件在close实例方法被调用时立即触发。
+// closed.bs.alert 警报关闭时会触发此事件（将等待CSS转换完成）​​。
+// $('.alert').on('closed.bs.alert', function () {
+//   //alert("x");
+// })
+</script>
+</body>
+</html>
